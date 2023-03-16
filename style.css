@@ -1,0 +1,37 @@
+body {
+    display: flex;
+}
+
+.image-sidebar {
+    background-image: url(images/jonny-mckenna-4igCpD-Lnfg-unsplash.jpg);
+    background-size: cover;
+    height: 90vh;
+    width: 37vw; 
+    position: relative;
+}
+
+.logo-bar {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(220,220,220,20%);
+    position: absolute;
+    top: 27.5vh;
+    padding: 10px;
+}
+
+.logo-text {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    color: rgb(230, 230, 230);
+}
+
+.logo {
+    width: 4rem;
+}
+
+.sign-up-form {
+    height: 90vh;
+    width: 63vw;
+}
