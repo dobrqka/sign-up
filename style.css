@@ -32,8 +32,38 @@ body {
 }
 
 .sign-up-form {
+    box-sizing: border-box;
     height: 90vh;
     width: 63vw;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
     flex-direction: column;
+    background-color: rgb(212, 212, 212);
+}
+
+.info {
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.form {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+
+button {
+    margin-top: 25px;
+    margin-bottom: 5px;
+    color:rgb(228, 228, 228);
+    background-color: rgb(141, 141, 202);
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 900;
+    padding: 15px 30px;
+    text-align: center;
 }
