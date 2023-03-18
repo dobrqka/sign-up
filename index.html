@@ -14,8 +14,12 @@
 <body>
     <div class="image-sidebar">
         <div class="logo-bar">
-            <div class="logo-text">Doboss</div>
-            <div><img class="logo" src="images/chicken.png" alt="A picture of a pixelated chicken"></div>   
+            <a class="logo-text" href="https://github.com/dobrqka" target="_blank">Doboss</a>
+            <div>
+                <a href="https://github.com/dobrqka" target="_blank">
+                    <img class="logo" src="images/chicken.png" alt="A picture of a pixelated chicken">
+                </a>
+            </div>   
         </div>
     </div>
     <div class="sign-up-form">
@@ -32,35 +36,42 @@
             <form>
                 <fieldset> 
                     <legend>Let's do this!</legend>
-                    <p>
-                        <label for="first-name">First Name</label>
-                        <input id="first-name" name="first-name" type="text">
-                    </p>
-                    <p>
-                        <label for="last-name">Last Name</label>
-                        <input id="last-name" name="last-name" type="text">
-                    </p>
-                    <p>
-                        <label for="email">Email</label>
-                        <input id="email" name="email" type="email">
-                    </p>
-                    <p>
-                        <label for="phone">Phone number</label>
-                        <input id="phone" name="phone" type="tel">
-                    </p>
-                    <p>
-                        <label for="password1">Password</label>
-                        <input id="password1" name="password1" type="password">
-                    </p>
-                    <p>
-                        <label for="password2">Confirm Password</label>
-                        <input id="password2" name="password2" type="password">
-                    </p>
+                    <div class="form-controls">
+                        <p>
+                            <label for="first-name">First Name</label>
+                            <input id="first-name" name="first-name" type="text" placeholder="Doboss">
+                        </p>
+                        <p>
+                            <label for="last-name">Last Name</label>
+                            <input id="last-name" name="last-name" type="text" placeholder="Shumenski">
+                        </p>
+                        <p>
+                            <label for="email">Email *</label>
+                            <input id="email" name="email" type="email" placeholder="email@domain.com" required>
+                            <span></span>
+                        </p>
+                        <p>
+                            <label for="phone">Phone number</label>
+                            <input id="phone" name="phone" type="tel" placeholder="00359888888888" minlength="14" maxlength="14">
+                            <span></span>
+                        </p>
+                        <p>
+                            <label for="password1">Password *</label>
+                            <input id="password1" name="password1" type="password" placeholder="pAssWorD9$" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
+                            <span></span>
+                        </p>
+                        <p>
+                            <label for="password2">Confirm Password *</label>
+                            <input id="password2" name="password2" type="password" placeholder="pAssWorD9$" required>
+                            <span class="error"></span>
+                        </p>
+                    </div>
                 </fieldset>
-                <button>Create Account</button>
-                <p>Already have an account? <a href="https://github.com/dobrqka">Log in</a> </p>
+                <button id="submit">Create Account</button>
+                <p class="footer">Already have an account? <a href="https://github.com/dobrqka" target="_blank">Log in</a> </p>
             </form>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

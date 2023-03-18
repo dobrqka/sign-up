@@ -1,11 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
 }
 
 .image-sidebar {
-    background-image: url(images/jonny-mckenna-4igCpD-Lnfg-unsplash.jpg);
+    background-image: url(images/ben-moreland-auijD19Byq8-unsplash.jpg);
     background-size: cover;
-    height: 90vh;
+    height: 98vh;
     width: 37vw; 
     position: relative;
 }
@@ -15,7 +19,7 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: rgb(220,220,220,20%);
+    background-color: rgb(220,220,220,40%);
     position: absolute;
     top: 27.5vh;
     padding: 10px;
@@ -33,21 +37,22 @@ body {
 
 .sign-up-form {
     box-sizing: border-box;
-    height: 90vh;
+    height: 98vh;
     width: 63vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
     flex-direction: column;
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(246, 207, 185);
 }
 
 .info {
-    margin-bottom: 50px;
+    box-sizing: border-box;
+    padding: 0vh 5vw 0vh;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 1000;
+    color: white;
 }
 
 .form {
@@ -59,11 +64,116 @@ button {
     margin-top: 25px;
     margin-bottom: 5px;
     color:rgb(228, 228, 228);
-    background-color: rgb(141, 141, 202);
+    background-color: rgb(237, 138, 67);
     border-radius: 5px;
     border: none;
     font-size: 1.1rem;
     font-weight: 900;
     padding: 15px 30px;
+    margin-left: 5vw;
     text-align: center;
+}
+
+fieldset {
+    background-color: rgb(249, 233, 221);
+    border: none;
+    position: relative;
+    box-shadow: 0px 3px 2px rgb(60, 25, 16, 20%);
+}
+
+.form-controls {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 50px 0px 25px;
+    justify-items: start;
+    margin-left: 5vw;
+}
+
+input, label {
+    display: block;
+    width: 15vw;
+    color: rgb(60, 25, 16);
+}
+
+input {
+    border: 1px solid rgb(170, 170, 170);
+    margin-bottom: 2px;
+    margin-top: 3px;
+    height: 1.8rem;
+    border-radius: 6px;
+    padding-left: 0.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.1rem;
+}
+
+legend {
+    position: absolute;
+    top: 20px;
+    left: 5vw;
+    font-size: 1.3rem;
+    color: rgb(60, 25, 16);
+}
+
+form > p {
+    padding-left: 5vw;
+}
+
+input:focus:invalid {
+    border: 1.5px solid red;
+}
+
+input:focus {
+    box-shadow: 1.5px 1.5px 1.5px rgb(60, 25, 16, 50%);
+    outline: none;
+}
+
+::placeholder {
+    color: rgb(219, 219, 219);
+}
+
+input:focus:valid {
+    border: 1.5px solid rgb(31, 69, 172);
+}
+
+input[type="email"]:not(:focus):not(:placeholder-shown):invalid + span::after {
+    content: "Should be in format: email@domain.com.";
+    position: absolute;
+    font-size: 0.7rem;
+    color: rgb(249, 68, 68);
+}
+
+input[type="tel"]:not(:focus):not(:placeholder-shown):invalid + span::after {
+    content: "Should have 14 digits.";
+    position: absolute;
+    font-size: 0.7rem;
+    color: rgb(249, 68, 68);
+}
+
+input[id="password1"]:not(:focus):not(:placeholder-shown):invalid + span::after {
+    content: "Should be at least 8 characters, including \a a capital letter, digit and symbol.";
+    white-space: pre-wrap;  
+    position: absolute;
+    font-size: 0.7rem;
+    color: rgb(249, 68, 68);
+}
+
+input[id="password2"]:not(:focus):not(:placeholder-shown):invalid + span::after {
+    content: "Password doesn't match.";
+    position: absolute;
+    font-size: 0.7rem;
+    color: rgb(249, 68, 68);
+}
+
+.footer {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.error {
+    position: absolute;
+    font-size: 0.7rem;
+    color: rgb(249, 68, 68);
 }
