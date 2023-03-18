@@ -10,7 +10,7 @@ body {
     background-image: url(images/ben-moreland-auijD19Byq8-unsplash.jpg);
     background-size: cover;
     height: 98vh;
-    width: 37vw; 
+    width: 40vw; 
     position: relative;
 }
 
@@ -38,7 +38,7 @@ body {
 .sign-up-form {
     box-sizing: border-box;
     height: 98vh;
-    width: 63vw;
+    width: 60vw;
     display: flex;
     justify-content: center;
     align-items: center;
